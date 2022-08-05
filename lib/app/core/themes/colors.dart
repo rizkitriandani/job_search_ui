@@ -9,3 +9,5 @@ const accentYellow = Color(0xffFCDA64);
 const textColorBlue = Color(0xff426FB4);
 const textColorBlack = Colors.black;
 const hintTextColor = Color(0xffA7A5A5);
+const textFieldColor = Color(0xffF6F6F6);
+const iconColorGrey = Color(0xffDADADA);

@@ -1,0 +1,1 @@
+enum Jobtype { fulltime, parttime }

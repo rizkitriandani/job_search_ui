@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../gen/assets.gen.dart';
-import '../../../core/themes/themes.dart';
+import '../../../global_widgets/rounded_button.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/get_started_controller.dart';
 
@@ -40,23 +40,11 @@ class GetStartedView extends GetView<GetStartedController> {
             const SizedBox(
               height: 40,
             ),
-            SizedBox(
-              width: 141,
-              height: 47,
-              child: TextButton(
-                onPressed: () => Get.offNamed(Routes.HOME),
-                style: TextButton.styleFrom(
-                    backgroundColor: primary,
-                    padding:
-                        const EdgeInsets.symmetric(vertical: 11, horizontal: 8),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10))),
-                child: const Text(
-                  "Get Started",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
+
+            RoundedButton(
+              label: 'Get Started',
+              onPressed: () => Get.offNamed(Routes.HOME),
+            )
             // const Spacer(),
           ],
         ),

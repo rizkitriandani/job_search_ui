@@ -20,7 +20,7 @@ final TextTheme textTheme = TextTheme(
       color: primary, fontSize: 34, fontWeight: FontWeight.w800),
   headline5: basedFont.copyWith(fontSize: 24, fontWeight: FontWeight.w400),
   headline6: basedFont.copyWith(
-      fontSize: 20, fontWeight: FontWeight.w500, letterSpacing: 0.15),
+      fontSize: 20, fontWeight: FontWeight.w600),
   subtitle1: basedFont.copyWith(
       color: primary,
       fontSize: 18, fontWeight: FontWeight.w400,),
