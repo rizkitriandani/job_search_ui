@@ -15,7 +15,40 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test: 
     sdk: flutter
+  build_runner:
+  flutter_gen_runner:
 
 flutter: 
-  uses-material-design: true
+  uses-material-design: true                                 
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/icons/
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-ExtraLight.ttf
+        - asset: assets/fonts/Nunito-ExtraLightItalic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-LightItalic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-Light.ttf
+        - asset: assets/fonts/Nunito-Regular.ttf
+        - asset: assets/fonts/Nunito-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-Medium.ttf
+        - asset: assets/fonts/Nunito-MediumItalic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+        - asset: assets/fonts/Nunito-SemiBoldItalic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-Bold.ttf
+        - asset: assets/fonts/Nunito-BoldItalic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-ExtraBold.ttf
+        - asset: assets/fonts/Nunito-ExtraBoldItalic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-BlackItalic.ttf
+          style: italic
+    
 
