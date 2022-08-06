@@ -43,7 +43,7 @@ class GetStartedView extends GetView<GetStartedController> {
 
             RoundedButton(
               label: 'Get Started',
-              onPressed: () => Get.offNamed(Routes.HOME),
+              onPressed: () => Get.offNamed(Routes.DASHBOARD),
             )
             // const Spacer(),
           ],

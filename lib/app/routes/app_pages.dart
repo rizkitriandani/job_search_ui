@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/dashboard/bindings/dashboard_binding.dart';
+import '../modules/dashboard/views/dashboard_view.dart';
 import '../modules/getStarted/bindings/get_started_binding.dart';
 import '../modules/getStarted/views/get_started_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.GET_STARTED,
       page: () => const GetStartedView(),
       binding: GetStartedBinding(),
+    ),
+    GetPage(
+      name: _Paths.DASHBOARD,
+      page: () => const DashboardView(),
+      binding: DashboardBinding(),
     ),
   ];
 }

@@ -28,6 +28,7 @@ ThemeData light = ThemeData(
         // gradient: LinearGradient(colors: [Color(0xff0081ff), Color(0xff01ff80)])
       ),
     ),
+    bottomAppBarTheme: BottomAppBarTheme(color: Colors.white, elevation: 20),
     appBarTheme: AppBarTheme(
       iconTheme: IconThemeData(color: Colors.white),
       backgroundColor: primary,
