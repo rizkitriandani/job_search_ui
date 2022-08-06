@@ -1,23 +1,31 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../bookmarked/views/bookmarked_view.dart';
+import '../../home/views/home_view.dart';
+import '../../profile/views/profile_view.dart';
+
 class DashboardController extends GetxController {
-  //TODO: Implement DashboardController
+  static DashboardController get to => Get.find();
+  var tabIndex = 0;
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  void changeTabIndex(int index) {
+    tabIndex = index;
+    update();
   }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  final currentIndex = 0.obs;
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
+  final pages =[
+    HomeView(),
+    BookmarkedView(),
+    ProfileView(),
+  ];
 
-  void increment() => count.value++;
+  Widget get currentPage => pages[currentIndex()];
+
+  changePage(int index) {
+    currentIndex.value = index;
+    update();
+  }
 }

@@ -9,14 +9,17 @@ class DashboardView extends GetView<DashboardController> {
   const DashboardView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          'DashboardView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
-      bottomNavigationBar: BottomNavBar(),
+    return GetBuilder<DashboardController>(
+      init: controller,
+      initState: (_) {},
+      builder: (_) {
+        return Scaffold(
+          body: Container(
+            child: controller.currentPage,
+          ),
+          bottomNavigationBar: const BottomNavBar(),
+        );
+      },
     );
   }
 }
